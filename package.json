@@ -24,7 +24,7 @@
         "express": "^4.18.1"
     },
     "scripts": {
-        "build": "rm -rf ./dist && webpack --config=./webpack.config.js --progress",
+        "build": "rm -rf ./dist && webpack --progress",
         "serve": "webpack serve",
         "create": "babel ./src/pages/index.marko.js -d ./src/pages/build"
     }
