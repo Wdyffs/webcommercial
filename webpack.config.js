@@ -19,7 +19,7 @@ module.exports = [
       path: path.join(__dirname, "dist/assets"),
     },
     devServer: {
-          hot: false,
+          hot: true,
           static: false,
           host: "0.0.0.0",
           allowedHosts: "all",
@@ -71,7 +71,7 @@ module.exports = [
     module: {
       rules: [
         {
-          test: /\.(jpg|jpeg|gif|png|svg)$/,
+          test: /\.(jpg|jpeg|gif|png|svg)$/i,
           generator: { emit: false },
           type: "asset/resource",
         },
